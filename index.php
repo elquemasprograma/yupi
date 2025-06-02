@@ -17,10 +17,10 @@ if (!empty($_POST))
     {
         require_once "conexion.php"; // Asegúrate de que este archivo define $connection correctamente
 
-        $user = $_POST['usuario'];
-        $pass = $_POST['clave'];
+        $user = mysqli_real_escape_string($connection,$_POST['usuario']);
+        $pass = md5(mysqli_real_escape_string($connection,$_POST['clave']));
 
-        // Si usas variables directamente, cuidado con inyecciones SQL. Considera usar consultas preparadas.
+        
         $query = mysqli_query($connection, "SELECT * FROM usuario WHERE usuario = '$user' AND clave = '$pass'");
         $result = mysqli_num_rows($query);
 

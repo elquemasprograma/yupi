@@ -161,3 +161,60 @@ nav li ul li:last-child{
 	padding: 90px 15px 15px;
 }
 /*****************************************************************/
+
+.form_register{
+	width: 450px;
+	margin:auto;
+}
+
+.form_register h1{
+	color:#3c96b0;
+}
+br{
+	border:0;
+	background: #CCC;
+	height: 1px;
+	margin:10px 0;
+	display: block;
+}
+
+form{
+	background: #FFF;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+}
+
+label{
+	display: block;
+	font-size: 12px;
+	font-family: "GothamBook";
+	margin: 15px auto 5px auto;
+}
+
+input,select{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	padding: 5px;
+	border: 1px solid #85929e;
+	border-radius: 8px;
+}
+
+.btn_save{
+	font-size:12px;
+	background: #3498db;
+	padding: 10px;
+	color: #FFF;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 15px auto;
+}
+
+.alert{
+	width: 100%;
+	background: #66e026;
+	border-radius: 6px;
+	margin: 20px auto;
+}
